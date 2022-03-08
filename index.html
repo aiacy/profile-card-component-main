@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: 'Kumbh Sans', sans-serif;
+      color: hsl(227, 10%, 46%);
+    }
+
+    .bold{
+      color: hsl(229, 23%, 23%);
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+
+    main.container{
+      height: 100vh;
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      background-color:  hsl(185, 75%, 39%);
+    }
+    .card{
+      width: 350px;
+      height: auto;
+      background-color: white;
+      display: grid;
+      border-radius: 1rem;
+    }
+
+    .card-bg{
+      border-radius: 1rem 1rem 0rem 0rem;
+    }
+
+    .profile-pic{
+      display: grid;
+      align-content: center;
+      justify-content: center;
+      margin: -40px;
+     
+    }
+
+    .profile-pic img{
+      border: 3px solid white;
+      border-radius: 100%;
+    }
+
+    .container-name{
+      display: grid;
+      margin-top: 4rem;
+      place-items: center;
+
+    }
+    .container-location{
+      display: grid;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .container-social{
+      display: grid;
+      justify-items: center;
+      align-content: center;
+      width: auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid hsl(0, 0%, 59%);
+      margin-top: 1rem;
+    
+    }
+    .container-likes{
+      display: grid;
+    }
+
+    span.age{
+      margin-left: .2rem;
+    }
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="card">
+      <img class="card-bg" src="./images/bg-pattern-card.svg" alt="">
+      <div class="profile-pic">
+        <img src="./images/image-victor.jpg" alt="">
+      </div>
+      <div class="container-name">
+        <p class="name bold">Victor Crest <span class="age">26</span></p>
+      </div>
+      <div class="container-location">
+        <p class="location">London</p>
+      </div>
+      <div class="container-social">
+        <div class="container-followers">
+          <p class="bold">80K</p>
+          <p>Followers</p>
+        </div>
+        <div class="container-likes">
+          <p class="bold">803K</p>
+          <p>Followers</p>
+        </div>
+        <div class="container-photos">
+          <p class="bold">1.4K</p>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+   
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
